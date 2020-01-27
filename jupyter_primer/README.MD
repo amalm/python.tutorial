@@ -6,11 +6,22 @@ https://realpython.com/jupyter-notebook-introduction/), the notebook sample uses
 
 Pre-requisite: `pip install --upgrade setuptools`
 
-Found at http://discuss.codingblocks.com/t/jupyter-notebook/23251
+Found at http://discuss.codingblocks.com/t/jupyter-notebook/23251, https://janakiev.com/blog/jupyter-virtual-envs/
+
 
 `pip install notebook`
 
 `pip install --user virtualenv`
+
+To use virtualenv in the Jupyter notebook:
+
+`python -m ipykernel install --user --name=fastaienv`
+
+Further commands to list and uninstall virtual environments:
+
+`jupyter kernelspec list`
+
+`jupyter kernelspec uninstall myenv`
 
 Start jupyter from project directory: `jupyter notebook`
 
