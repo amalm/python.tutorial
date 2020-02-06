@@ -13,9 +13,13 @@ Found at http://discuss.codingblocks.com/t/jupyter-notebook/23251, https://janak
 
 `pip install --user virtualenv`
 
+`pip install --user ipykernel`
+
 To use virtualenv in the Jupyter notebook:
 
-`python -m ipykernel install --user --name=fastaienv`
+`virtualenv venv` to create a virtual env.
+
+`source venv/bin/activate && python -m ipykernel install --user --name=fastaienv`
 
 Further commands to list and uninstall virtual environments:
 
